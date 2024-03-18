@@ -171,6 +171,7 @@ body > header a {
 /* Page Container */
 .container {
     padding: 0 1.5rem;
+    width: calc(100% - 3rem);
     margin-top: 100px; /* 36px + 65px */
 }
 
@@ -178,7 +179,16 @@ body > header a {
 .container nav {
     width: 260px;
     position: fixed;
-    max-height: calc(100% - 65px);
+    max-height: calc(100vh - 184px);
+    overflow-y: scroll;
+}
+
+.container nav > header {
+    color: #eee;
+    font-size: 20px;
+    padding: 6px;
+    font-weight: 700;
+    color: #19e2c1;
 }
 
 .container nav a {
@@ -203,7 +213,7 @@ body > header a {
 .container nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 32px 0;
+    padding: 16px 0;
 }
 
 /* Page Content */
